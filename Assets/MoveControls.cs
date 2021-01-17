@@ -45,11 +45,11 @@ public class MoveControls : MonoBehaviour
 
         if (rotateRightButton.buttonPressed)
         {
-            mainCamera.transform.Rotate(new Vector3(0f, 1f, 0.0f));
+            mainCamera.transform.Rotate(new Vector3(0f, 1f, 0.0f), Space.World);
         }
         if (rotateLeftButton.buttonPressed)
         {
-            mainCamera.transform.Rotate(new Vector3(0f, -1f, 0.0f));
+            mainCamera.transform.Rotate(new Vector3(0f, -1f, 0.0f), Space.World);
         }
         if (rotateUpButton.buttonPressed)
         {
